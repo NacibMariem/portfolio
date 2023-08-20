@@ -1,14 +1,101 @@
-import logo from './logo.svg';
+
 import './App.css';
-import me from './assets/img/me.jpg';
-function App() {
+
+import {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  getInTouch,
+  
+} from "./editable-stuff/config.js";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainBody from "./components/home/MainBody";
+import AboutMe from "./components/home/AboutMe";
+import Project from "./components/home/Project";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Skills from "./components/home/Skills";
+// import { Blog } from "./components/blog/Blog";
+// import BlogPost from "./components/blog/BlogPost";
+import GetInTouch from "./components/home/GetInTouch.jsx";
+// import Leadership from "./components/home/Leadership.jsx";
+
+import Certificates from "./components/home/Certificates"; // Import the Certificates component
+import IntegratedProjects from "./components/home/IntegratedProjects";
+import Experiences from "./components/home/Experience.jsx";
+import SocialProjects from "./components/home/socialProjects.jsx";
+import React from 'react';
+
+const Home = React.forwardRef((props, ref) => {
   return (
-    <div className="App">
-      <h1>this is my portfolio </h1>
-      <h2>My name is : </h2><h1> NACIB MARIEM</h1>
-      <img src={me} alt="this is me"></img>
-    </div>
+    <>
+      <MainBody
+        gradient={mainBody.gradientColors}
+        title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
+        message={mainBody.message}
+        icons={mainBody.icons}
+        ref={ref}
+      />
+      {about.show && (
+        <AboutMe
+          heading={about.heading}
+          message={about.message}
+          link={about.imageLink}
+          imgSize={about.imageSize}
+          resume={about.resume}
+        />
+      )}
+
+      {repos.show && (
+        <Project
+          heading={repos.heading}
+          username={repos.gitHubUsername}
+          length={repos.reposLength}
+          specfic={repos.specificRepos}
+        />
+      )}
+
+      {skills.show && (
+        <Skills
+          heading={skills.heading}
+          hardSkills={skills.hardSkills}
+          softSkills={skills.softSkills}
+        />
+      )}
+      <Experiences/>
+      <IntegratedProjects />
+      <SocialProjects/>
+      <Certificates />
+      
+    </>
   );
-}
+});
+
+const App = () => {
+  const titleRef = React.useRef();
+
+  return (
+    <BrowserRouter basename={process.env.PUBLIC_URL }>
+      {navBar.show && <Navbar ref={titleRef} />}
+      <Routes>
+        <Route path="/" exact element={<Home ref={titleRef} />} />
+      </Routes>
+      {/* {false && <Route path="/blog" exact component={Blog} />}
+      {false && <Route path="/blog/:id" component={BlogPost} />} */}
+      <Footer>
+        {getInTouch.show && (
+          <GetInTouch
+            heading={getInTouch.heading}
+            message={getInTouch.message}
+            email={getInTouch.email}
+          />
+        )}
+      </Footer>
+
+    </BrowserRouter>
+  );
+};
 
 export default App;

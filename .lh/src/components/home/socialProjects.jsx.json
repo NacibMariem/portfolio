@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/home/socialProjects.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1692553347498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1692553347498,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport Container from \"react-bootstrap/Container\";\r\nimport Card from \"react-bootstrap/Card\";\r\nimport Row from \"react-bootstrap/Row\";\r\nimport Col from \"react-bootstrap/Col\";\r\nconst socialProjects = [\r\n  {\r\n    title: \"Harassment Awareness\",\r\n    description: \"Raising awareness about harassment issues in the community.\",\r\n    // video: require(\"../../assets/vids/Esprits Inclusifs+betisier.mp4\"),\r\n  },\r\n  {\r\n    title: \"Time Travel Campaign\",\r\n    description: \"Promoting time travel education for all ages.\",\r\n    video: require(\"../../assets/vids/VideoPublicitaire.mp4\"),\r\n  },\r\n  // Add more projects here\r\n];\r\n\r\n\r\nconst SocialProjects = () => {\r\n    return (\r\n      <Container id=\"social-projects\" className=\"py-5\">\r\n        <h2 className=\"display-4 text-center mb-5\">Social Projects</h2>\r\n        <Row className=\"justify-content-center\">\r\n          {socialProjects.map((project, index) => (\r\n            <Col key={`social-project-${index}`} xs={12} sm={6} className=\"mb-4\">\r\n              <Card>\r\n                <Card.Body>\r\n                  <Card.Title>{project.title}</Card.Title>\r\n                  <Card.Text>{project.description}</Card.Text>\r\n                  <div className=\"video-container\">\r\n                    <video controls className=\"w-100\">\r\n                      <source src={project.video} type=\"video/mp4\" />\r\n                      Your browser does not support the video tag.\r\n                    </video>\r\n                  </div>\r\n                </Card.Body>\r\n              </Card>\r\n            </Col>\r\n          ))}\r\n        </Row>\r\n      </Container>\r\n    );\r\n  };\r\n  \r\n  export default SocialProjects;"
+        }
+    ]
+}

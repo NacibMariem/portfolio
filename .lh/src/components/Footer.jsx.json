@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Footer.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1692553484674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1692553484674,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\nimport Container from \"react-bootstrap/container\";\n\nconst Footer = (props) => {\n  const bgStyle = { backgroundColor: \"#f5f5f5\" };\n\n  return (\n    <footer style={bgStyle} className=\"mt-auto py-5 text-center \">\n      <Container>\n        {props.children}\n        <i className=\"fas fa-code\" /> with respect by{\" \"}\n        <a\n          rel=\"noopener\"\n          href=\"https://github.com/nacib1999\"\n          aria-label=\"My GitHub\"\n        > <span className=\"badge bg-dark\">\n            Mariem NACIB\n          </span>\n        </a>{\" \"}\n        using <i className=\"fab fa-react\" />\n        <p>\n          <small className=\"text-muted\">\n            \n          </small>\n        </p>\n      </Container>\n    </footer>\n  );\n};\n\nexport default Footer;\n"
+        }
+    ]
+}
