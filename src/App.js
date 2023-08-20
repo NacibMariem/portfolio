@@ -1,6 +1,6 @@
 
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   navBar,
   mainBody,
@@ -10,7 +10,6 @@ import {
   getInTouch,
   
 } from "./editable-stuff/config.js";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
@@ -26,7 +25,6 @@ import Certificates from "./components/home/Certificates"; // Import the Certifi
 import IntegratedProjects from "./components/home/IntegratedProjects";
 import Experiences from "./components/home/Experience.jsx";
 import SocialProjects from "./components/home/socialProjects.jsx";
-import React from 'react';
 
 const Home = React.forwardRef((props, ref) => {
   return (
