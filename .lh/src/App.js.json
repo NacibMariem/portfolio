@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1692551178069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1692551186950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551195919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551209332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2></h2>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551215365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is</h2>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551222631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is :</h2><h3\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551228454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is :</h2><h1>MARIEM</h1>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551237097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,13 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551248853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551254687,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src=''></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551262413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={} alt ></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551271542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={} alt=\"my-\"></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551336226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,157 +1,14 @@\n import logo from './logo.svg';\n import './App.css';\n-\n+import \n function App() {\n   return (\n     <div className=\"App\">\n       <h1>this is my portfolio </h1>\n       <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n-      <img src={} alt=\"my-\"></img>\n+      <img src={} alt=\"this is me\"></img>\n     </div>\n   );\n }\n \n export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n-      <img src={} alt ></img>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n-      <img src=''></img>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n-      <img></img>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is :</h2><h1>MARIEM</h1>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is :</h2><h3\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2>My name is</h2>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-      <h2></h2>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1>this is my portfolio </h1>\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-      <h1\n-    </div>\n-  );\n-}\n-\n-export default App;\n-import logo from './logo.svg';\n-import './App.css';\n-\n-function App() {\n-  return (\n-    <div className=\"App\">\n-\n-    </div>\n-  );\n-}\n-\n-export default App;\n"
+                },
+                {
+                    "date": 1692551355510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+import me from \n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={} alt=\"this is me\"></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551361726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+import me from './'\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={} alt=\"this is me\"></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551366923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+import me from './assets/img/me.jpg'\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={} alt=\"this is me\"></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                },
+                {
+                    "date": 1692551376414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import logo from './logo.svg';\n+import './App.css';\n+import me from './assets/img/me.jpg';\n+function App() {\n+  return (\n+    <div className=\"App\">\n+      <h1>this is my portfolio </h1>\n+      <h2>My name is : </h2><h1> NACIB MARIEM</h1>\n+      <img src={me} alt=\"this is me\"></img>\n+    </div>\n+  );\n+}\n+\n+export default App;\n"
+                }
+            ],
+            "date": 1692551178069,
+            "name": "Commit-0",
+            "content": "import logo from './logo.svg';\nimport './App.css';\n\nfunction App() {\n  return (\n    <div className=\"App\">\n\n    </div>\n  );\n}\n\nexport default App;\n"
+        }
+    ]
+}
