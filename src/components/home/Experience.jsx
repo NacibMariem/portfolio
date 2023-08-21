@@ -7,20 +7,23 @@ const experiences = [
   {
     company: "PwC",
     position: "Internship",
-    duration: "May 2022 - July 2022",
+    duration: "June 2023 - August 2023",
+    description:"Salesforce internship focused on Reporting, Dashboarding and Dgitizing documents",
     logo: require("../../assets/img/pwc-logo.png"),
   },
   {
     company: "Topnet",
     position: "Internship",
-    duration: "January 2022 - March 2022",
-    logo: require("../../assets/img/pwc-logo.png"),
+    duration: "July 2022 - August 2022",
+    description:"Provided clerical support, addressed routine and special requirements, and resolved technical client claims.",
+    logo: require("../../assets/img/topnet-logo.png"),
   },
   {
     company: "Tunis Post",
     position: "Internship",
     duration: "June 2021 - August 2021",
-    logo: require("../../assets/img/pwc-logo.png"),
+    description:"Served as a front desk agent and enhanced financial skills.",
+    logo: require("../../assets/img/poste-tunis-logo.png"),
   },
 ];
 
@@ -39,6 +42,7 @@ const Experiences = () => {
               />
               <p className="mb-0 mt-3">{experience.company}</p>
               <p className="mb-0">{experience.position}</p>
+              <p className="mb-0">{experience.description}</p>
               <p className="mb-0">{experience.duration}</p>
             </div>
           </Col>

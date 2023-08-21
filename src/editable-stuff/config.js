@@ -54,7 +54,8 @@ const about = {
   imageLink: require("../editable-stuff/me.jpg"),
   imageSize: 375,
   message:
-    "My name is NACIB Mariem. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
+  "I'm fueled by a relentless passion for advancing my skills, which I diligently cultivate through immersive hands-on learning experiences and dynamic development projects. My expertise becomes evident in the sophisticated yet user-friendly systems I create. I thrive on the challenges that come my way, constantly seeking opportunities to push my boundaries and broaden my horizons in the realm of software engineering. Every line of code I write is infused with a commitment to excellence and an insatiable curiosity to explore the uncharted territories of technology. As I continue to evolve and learn, I look forward to embracing fresh challenges and seizing every chance to elevate my skills to greater heights.",
+
     resume: require("../editable-stuff/mycv.pdf"),
 };
 
@@ -68,7 +69,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "Nacib1999", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["ProjetCppA23G2", "Jeu-video2D-SDL", "EspritProjet", "django",],
+  specificRepos: ["ProjetCppA23G2", "Jeu-video2D-SDL", "EspritProjet", "django","ReactWork","Projet-Web"],
 };
 
 // Leadership SECTION
@@ -102,12 +103,15 @@ const skills = {
   hardSkills: [
     { name: "Python", value: 90 },
     { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
+    { name: "Angular", value: 85 },
     { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "JavaScript / TypeScript", value: 70 },
+    { name: "React", value: 85 },
+    { name: "HTML/CSS", value: 75 },
+    { name: "C#", value: 55 },
+    { name: "php", value: 90 },
+    { name: "Java", value: 60 },
+    
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -126,7 +130,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  "I am passionate about enhancing my skills through hands-on learning and development projects. My expertise lies in web and desktop application development.I am dedicated to delivering high-quality work and am always looking for new challenges to expand my knowledge and expertise",
   email: "mariem.nacib@esprit.tn",
 };
 

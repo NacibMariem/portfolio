@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
 import Project from "./home/Project";
+import Certificates from "./home/Certificates";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -39,7 +40,7 @@ const Navigation = React.forwardRef((props, ref) => {
         }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#welcome"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -50,7 +51,15 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </NavLink>
           } */}
-          {repos.show && (
+          {about.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#aboutme"}
+            >
+              About Me
+            </NavLink>
+          )}
+          {/* {repos.show && (
 
             <NavLink
             className="nav-item lead"
@@ -58,24 +67,35 @@ const Navigation = React.forwardRef((props, ref) => {
             >
               Projects
             </NavLink>
-          )}
-          <NavLink
-            className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </NavLink>
-          {about.show && (
+          )} */}
+
+
+
             <NavLink
               className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#experiences"}
             >
-              About
+              Experiences
             </NavLink>
-          )}
-          {skills.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#integrated-projects"}
+            >
+              Integrated Projects
+            </NavLink>
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#social-projects"}
+            >
+              Social Projects
+            </NavLink>
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#certificates"}
+            >
+              Certificates
+            </NavLink>
+            {skills.show && (
             <NavLink
               className="nav-item lead"
               href={process.env.PUBLIC_URL + "/#skills"}
@@ -83,14 +103,16 @@ const Navigation = React.forwardRef((props, ref) => {
               Skills
             </NavLink>
           )}
-          {Project.show && (
             <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#experiences"}
-            >
-              Projects Integré
-            </NavLink>
-          )}
+            className="nav-item lead"
+            href={about.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Resume
+          </NavLink>
+
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

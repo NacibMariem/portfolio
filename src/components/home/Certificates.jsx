@@ -8,7 +8,7 @@ const Certificates = () => {
   const certificateDirectory = require.context(
     "../../editable-stuff/",
     false,
-    /Certificate .*\.pdf$/ 
+    /Certificate .*\.pdf$/
   );
 
   const certificatePDFs = certificateDirectory.keys().map((key) => {
@@ -19,40 +19,46 @@ const Certificates = () => {
     };
   });
 
-  const [selectedCertificate, setSelectedCertificate] = useState(
-    certificatePDFs[0]
+  const [visibleCertificates, setVisibleCertificates] = useState(4);
+  const [selectedCertificateIndex, setSelectedCertificateIndex] = useState(
+    0
   );
 
-  const scrollToCertificateFrame = () => {
-    const frame = document.getElementById("certificate-frame");
-    if (frame) {
-      frame.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleCertificateClick = (index) => {
+    setSelectedCertificateIndex(index);
+  };
+
+  const loadMoreCertificates = () => {
+    setVisibleCertificates((prevCount) => prevCount + 4);
+  };
+
+  const showLessCertificates = () => {
+    setVisibleCertificates(4);
   };
 
   return (
     <Container id="certificates" className="py-5">
       <h2 className="display-4 text-center mb-5">Certificates</h2>
       <div className="d-flex flex-wrap justify-content-center">
-        {certificatePDFs.map((certificate, index) => (
+        {certificatePDFs.slice(0, visibleCertificates).map((certificate, index) => (
           <OverlayTrigger
             key={`certificate-${index}`}
             placement="top"
             overlay={<Tooltip>Click to view the certificate</Tooltip>}
           >
             <Card
-              className="m-3"
-              onClick={() => {
-                setSelectedCertificate(certificate);
-                scrollToCertificateFrame();
-              }}
+              key={`certificate-${index}`}
+              className={`m-3 certificate-card ${
+                selectedCertificateIndex === index ? "selected" : ""
+              }`}
+              onClick={() => handleCertificateClick(index)}
               style={{
                 cursor: "pointer",
-                maxWidth: "300px",
+                maxWidth: "200px",
                 border: "none",
+                borderRadius: "10px",
                 boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
                 transition: "box-shadow 0.3s ease",
-                borderRadius: "10px",
               }}
               onMouseEnter={(e) => {
                 e.target.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
@@ -70,15 +76,26 @@ const Certificates = () => {
           </OverlayTrigger>
         ))}
       </div>
-      <div
-        id="certificate-frame"
-        className="certificate-frame mt-3"
-        style={{ paddingTop: "20px" }}
-      >
-        <h4 className="text-center">{selectedCertificate.name}</h4>
+      {visibleCertificates < certificatePDFs.length ? (
+        <div className="text-center mt-3">
+          <button className="btn btn-primary" onClick={loadMoreCertificates}>
+            Load More
+          </button>
+        </div>
+      ) : (
+        <div className="text-center mt-3">
+          <button className="btn btn-secondary" onClick={showLessCertificates}>
+            Show Less
+          </button>
+        </div>
+      )}
+      <div className="certificate-frame mt-3" style={{ paddingTop: "20px" }}>
+        <h4 className="text-center">
+          {certificatePDFs[selectedCertificateIndex].name}
+        </h4>
         <iframe
-          title={`Certificate ${selectedCertificate.name}`}
-          src={selectedCertificate.link}
+          title={`Certificate ${certificatePDFs[selectedCertificateIndex].name}`}
+          src={certificatePDFs[selectedCertificateIndex].link}
           style={{ width: "100%", height: "500px" }}
         />
       </div>

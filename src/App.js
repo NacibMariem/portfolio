@@ -25,10 +25,12 @@ import Certificates from "./components/home/Certificates"; // Import the Certifi
 import IntegratedProjects from "./components/home/IntegratedProjects";
 import Experiences from "./components/home/Experience.jsx";
 import SocialProjects from "./components/home/socialProjects.jsx";
+import { Container , Row , Col , Carousel , Card} from 'react-bootstrap';
 
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
+
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
@@ -36,7 +38,10 @@ const Home = React.forwardRef((props, ref) => {
         icons={mainBody.icons}
         ref={ref}
       />
+
       {about.show && (
+                <Container id="about" className="py-5">
+                <Row className="justify-content-center">
         <AboutMe
           heading={about.heading}
           message={about.message}
@@ -44,29 +49,41 @@ const Home = React.forwardRef((props, ref) => {
           imgSize={about.imageSize}
           resume={about.resume}
         />
+                  </Row>
+        </Container>
       )}
 
+
+
+
+      <Experiences/>
+      <IntegratedProjects id="integrated-projects" />
       {repos.show && (
+
+                            
+                              
         <Project
           heading={repos.heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
         />
-      )}
+                              
 
+      )}
+      <SocialProjects/>
+      <Certificates />
       {skills.show && (
+                <Container id="skills" className="py-5">
+                <Row className="justify-content-center">
         <Skills
           heading={skills.heading}
           hardSkills={skills.hardSkills}
           softSkills={skills.softSkills}
         />
+                  </Row>
+        </Container>
       )}
-      <Experiences/>
-      <IntegratedProjects />
-      <SocialProjects/>
-      <Certificates />
-      
     </>
   );
 });
