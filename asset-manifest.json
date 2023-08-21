@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.dce5c223.css",
-    "main.js": "/portfolio/static/js/main.d87179ed.js",
+    "main.js": "/portfolio/static/js/main.d2e1168c.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project3-image2.png": "/portfolio/static/media/project3-image2.81bc691736c22c6795d5.png",
     "static/media/project2-image1.png": "/portfolio/static/media/project2-image1.f84f5583cc16f955e7be.png",
@@ -46,13 +46,14 @@
     "static/media/project5-image4.png": "/portfolio/static/media/project5-image4.2c71e0163cccad306b28.png",
     "static/media/project5-image2.png": "/portfolio/static/media/project5-image2.16671a7eb52d543f19c6.png",
     "static/media/project5-image3.png": "/portfolio/static/media/project5-image3.42ac38feacc632c8deec.png",
+    "static/media/poste-tunis-logo.png": "/portfolio/static/media/poste-tunis-logo.838fe902644f65753a7f.png",
     "index.html": "/portfolio/index.html",
     "main.dce5c223.css.map": "/portfolio/static/css/main.dce5c223.css.map",
-    "main.d87179ed.js.map": "/portfolio/static/js/main.d87179ed.js.map",
+    "main.d2e1168c.js.map": "/portfolio/static/js/main.d2e1168c.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dce5c223.css",
-    "static/js/main.d87179ed.js"
+    "static/js/main.d2e1168c.js"
   ]
 }
