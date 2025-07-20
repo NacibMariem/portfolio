@@ -8,14 +8,14 @@ const experiences = [
     company: "SPN (Swiss Premium Negoce)",
     position: "End of Study Project Internship",
     duration: "February 2023 - September 2024",
-    description:"Design and development of a luxury accommodation management backoffice application by integrating reservation management modules, KPIs, and a chatbot using Next.js, Express.js, MongoDB, and the TDD approach ",
+    description:"Design and development of a luxury accommodation management Back-Office application by integrating reservation management modules, KPIs, and a chatbot using Next.js, Express.js, MongoDB, and the TDD approach ",
     logo: require("../../assets/img/spn-logo.png"),
   },
   {
     company: "PwC",
     position: "Engineering Internship",
     duration: "June 2023 - August 2023",
-    description:"Salesforce internship focused on Reporting, Dashboarding and Dgitizing documents",
+    description:"Salesforce internship focused on digitizing documents and creating reports and dashboards",
     logo: require("../../assets/img/pwc-logo.png"),
   },
   {
