@@ -13,7 +13,7 @@ const mainBody = {
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/nacib1999",
+      url: "https://github.com/nacibmariem",
     },
     {
       image: "fa-facebook",
@@ -54,9 +54,9 @@ const about = {
   imageLink: require("../editable-stuff/me.jpg"),
   imageSize: 375,
   message:
-  "I'm fueled by a relentless passion for advancing my skills, which I diligently cultivate through immersive hands-on learning experiences and dynamic development projects. My expertise becomes evident in the sophisticated yet user-friendly systems I create. I thrive on the challenges that come my way, constantly seeking opportunities to push my boundaries and broaden my horizons in the realm of software engineering. Every line of code I write is infused with a commitment to excellence and an insatiable curiosity to explore the uncharted territories of technology. As I continue to evolve and learn, I look forward to embracing fresh challenges and seizing every chance to elevate my skills to greater heights.",
+    "I'm fueled by a relentless passion for advancing my skills, which I diligently cultivate through immersive hands-on learning experiences and dynamic development projects. My expertise becomes evident in the sophisticated yet user-friendly systems I create. I thrive on the challenges that come my way, constantly seeking opportunities to push my boundaries and broaden my horizons in the realm of software engineering. Every line of code I write is infused with a commitment to excellence and an insatiable curiosity to explore the uncharted territories of technology. As I continue to evolve and learn, I look forward to embracing fresh challenges and seizing every chance to elevate my skills to greater heights.",
 
-    resume: require("../editable-stuff/mycv.pdf"),
+  resume: require("../editable-stuff/mycv.pdf"),
 };
 
 // PROJECTS SECTION
@@ -67,9 +67,16 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "Nacib1999", //i.e."johnDoe12Gh"
+  gitHubUsername: "NacibMariem", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["ProjetCppA23G2", "Jeu-video2D-SDL", "EspritProjet", "django","ReactWork","Projet-Web"],
+  specificRepos: [
+    "ProjetCppA23G2",
+    "Jeu-video2D-SDL",
+    "EspritProjet",
+    "django",
+    "ReactWork",
+    "Projet-Web",
+  ],
 };
 
 // Leadership SECTION
@@ -79,21 +86,21 @@ const leadership = {
   message:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
-    { 
-      img: require("../editable-stuff/me.jpg"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/me.jpg"),
+      label: "First slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
-    { 
-      img: require("../editable-stuff/me.jpg"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      img: require("../editable-stuff/me.jpg"),
+      label: "Second slide label",
+      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
     },
   ],
   imageSize: {
-    width:"615",
-    height:"450"
-  }
+    width: "615",
+    height: "450",
+  },
 };
 
 // SKILLS SECTION
@@ -111,7 +118,6 @@ const skills = {
     { name: "C#", value: 55 },
     { name: "php", value: 90 },
     { name: "Java", value: 60 },
-    
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -130,7 +136,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-  "I am passionate about enhancing my skills through hands-on learning and development projects. My expertise lies in web and desktop application development.I am dedicated to delivering high-quality work and am always looking for new challenges to expand my knowledge and expertise",
+    "I am passionate about enhancing my skills through hands-on learning and development projects. My expertise lies in web and desktop application development.I am dedicated to delivering high-quality work and am always looking for new challenges to expand my knowledge and expertise",
   email: "mariem.nacib@esprit.tn",
 };
 
@@ -148,12 +154,21 @@ const experiences = {
     //   companylogo: require('../assets/img/boeing.png'),
     //   date: 'May 2017 – May 2018',
     // },
-  ]
-}
+  ],
+};
 
 // Blog SECTION
 // const blog = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export {
+  navBar,
+  mainBody,
+  about,
+  repos,
+  skills,
+  leadership,
+  getInTouch,
+  experiences,
+};
