@@ -5,8 +5,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
-import Project from "./home/Project";
-import Certificates from "./home/Certificates";
+// import Project from "./home/Project";
+// import Certificates from "./home/Certificates";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -36,11 +36,15 @@ const Navigation = React.forwardRef((props, ref) => {
   return (
     <Navbar
       ref={navbarMenuRef}
-      className={`px-3 fixed-top  ${!isTop ? "navbar-white" : "navbar-transparent"
-        }`}
+      className={`px-3 fixed-top  ${
+        !isTop ? "navbar-white" : "navbar-transparent"
+      }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#welcome"}>
+      <Navbar.Brand
+        className="navbar-brand"
+        href={process.env.PUBLIC_URL + "/#welcome"}
+      >
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -69,33 +73,31 @@ const Navigation = React.forwardRef((props, ref) => {
             </NavLink>
           )}
 
-
-
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#experiences"}
-            >
-              Experiences
-            </NavLink>
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#integrated-projects"}
-            >
-              Integrated Projects
-            </NavLink>
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#social-projects"}
-            >
-              Social Projects
-            </NavLink>
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#certificates"}
-            >
-              Certificates
-            </NavLink>
-            {skills.show && (
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#experiences"}
+          >
+            Experiences
+          </NavLink>
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#integrated-projects"}
+          >
+            Integrated Projects
+          </NavLink>
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#social-projects"}
+          >
+            Social Projects
+          </NavLink>
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#certificates"}
+          >
+            Certificates
+          </NavLink>
+          {skills.show && (
             <NavLink
               className="nav-item lead"
               href={process.env.PUBLIC_URL + "/#skills"}
@@ -103,7 +105,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Skills
             </NavLink>
           )}
-            <NavLink
+          <NavLink
             className="nav-item lead"
             href={about.resume}
             target="_blank"
@@ -111,8 +113,6 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             Resume
           </NavLink>
-
-
         </Nav>
       </Navbar.Collapse>
     </Navbar>

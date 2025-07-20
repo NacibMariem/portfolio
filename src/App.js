@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import {
   navBar,
@@ -8,7 +7,6 @@ import {
   repos,
   skills,
   getInTouch,
-  
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
@@ -25,12 +23,11 @@ import Certificates from "./components/home/Certificates"; // Import the Certifi
 import IntegratedProjects from "./components/home/IntegratedProjects";
 import Experiences from "./components/home/Experience.jsx";
 import SocialProjects from "./components/home/socialProjects.jsx";
-import { Container , Row , Col , Carousel , Card} from 'react-bootstrap';
+import { Container, Row } from "react-bootstrap";
 
 const Home = React.forwardRef((props, ref) => {
   return (
     <>
-
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
@@ -40,48 +37,40 @@ const Home = React.forwardRef((props, ref) => {
       />
 
       {about.show && (
-                <Container id="about" className="py-5">
-                <Row className="justify-content-center">
-        <AboutMe
-          heading={about.heading}
-          message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
-        />
-                  </Row>
+        <Container id="about" className="py-5">
+          <Row className="justify-content-center">
+            <AboutMe
+              heading={about.heading}
+              message={about.message}
+              link={about.imageLink}
+              imgSize={about.imageSize}
+              resume={about.resume}
+            />
+          </Row>
         </Container>
       )}
 
-
-
-
-      <Experiences/>
+      <Experiences />
       <IntegratedProjects id="integrated-projects" />
       {repos.show && (
-
-                            
-                              
         <Project
           heading={repos.heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
         />
-                              
-
       )}
-      <SocialProjects/>
+      <SocialProjects />
       <Certificates />
       {skills.show && (
-                <Container id="skills" className="py-5">
-                <Row className="justify-content-center">
-        <Skills
-          heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
-        />
-                  </Row>
+        <Container id="skills" className="py-5">
+          <Row className="justify-content-center">
+            <Skills
+              heading={skills.heading}
+              hardSkills={skills.hardSkills}
+              softSkills={skills.softSkills}
+            />
+          </Row>
         </Container>
       )}
     </>
@@ -92,7 +81,7 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL }>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
@@ -108,7 +97,6 @@ const App = () => {
           />
         )}
       </Footer>
-
     </BrowserRouter>
   );
 };
