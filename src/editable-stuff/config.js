@@ -76,6 +76,9 @@ const repos = {
     "django",
     "ReactWork",
     "Projet-Web",
+    "PI_2023_4TWIN7_TechTitans",
+    "web-distributed",
+    "projet-laravel",
   ],
 };
 
@@ -109,15 +112,19 @@ const skills = {
   heading: "Skills",
   hardSkills: [
     { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Angular", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript / TypeScript", value: 70 },
-    { name: "React", value: 85 },
-    { name: "HTML/CSS", value: 75 },
-    { name: "C#", value: 55 },
-    { name: "php", value: 90 },
+    { name: "JavaScript / TypeScript", value: 80 },
     { name: "Java", value: 60 },
+    { name: "C/C++", value: 65 },
+    { name: "C#", value: 55 },
+    { name: "Php", value: 90 },
+    { name: "Nextjs", value: 95 },
+    { name: "Reactjs", value: 85 },
+    { name: "Angular", value: 75 },
+    { name: "React", value: 95 },
+    { name: "Devops", value: 75 },
+    { name: "MongoDB", value: 100 },
+    { name: "MySQL", value: 100 },
+    { name: "PostgreSQL", value: 50 },
   ],
   softSkills: [
     { name: "Goal-Oriented", value: 80 },
@@ -136,7 +143,7 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I am passionate about enhancing my skills through hands-on learning and development projects. My expertise lies in web and desktop application development.I am dedicated to delivering high-quality work and am always looking for new challenges to expand my knowledge and expertise",
+    "I am passionate about enhancing my skills through hands-on learning and development projects. My expertise lies in web and desktop application development. I am dedicated to delivering high-quality work and i am always looking for new challenges to expand my knowledge and expertise",
   email: "mariem.nacib@esprit.tn",
 };
 

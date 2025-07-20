@@ -59,7 +59,7 @@ const Navigation = React.forwardRef((props, ref) => {
               About Me
             </NavLink>
           )}
-          {/* {repos.show && (
+          {repos.show && (
 
             <NavLink
             className="nav-item lead"
@@ -67,7 +67,7 @@ const Navigation = React.forwardRef((props, ref) => {
             >
               Projects
             </NavLink>
-          )} */}
+          )}
 
 
 
